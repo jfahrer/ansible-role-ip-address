@@ -1,0 +1,11 @@
+galaxy_info:
+  author: Julian Fahrer
+  description: Role that registers the nodes first private ip address as a fact
+  license: MIT
+  min_ansible_version: 2.2
+  platforms:
+  - name: EL
+    versions:
+    - 6
+    - 7
+dependencies: []

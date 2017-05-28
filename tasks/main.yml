@@ -1,0 +1,8 @@
+---
+- name: Register nodes internal ipv4 address
+  set_fact:
+    internal_ipv4_address: " {{ ansible_all_ipv4_addresses | ipaddr('private') | first }}"
+
+- debug:
+    msg: "The nodes internal ipv4 address is: {{ internal_ipv4_address }}"
+    verbosity: 1
